@@ -1,0 +1,170 @@
+Projectopia
+
+Version 4.3.13
+
+For documentation and help, please visit - 
+
+https://projectopia.io
+
+= 4.3.13 (03 June, 2021) =
+Bug: Fixed the issue of some PHP Undefined Variables.
+Bug: Fixed the issue of Client name not appearing in quote.
+Bug: Fixed the issue of Duplicate Div element.
+Bug: Fixed the issue of Task disappear after sorting.
+Bug: Fixed the issue of Some string not translatable.
+Enhancement: Added condition to fix the Notification of payment on Invoice send to Sales and Accounts email issue of subscription addon.
+Enhancement: Added hook or integrate the client area addon.
+
+= 4.3.12 (03 Mar, 2021) =
+Bug : Fixed the issue of invoice being sent incorrectly after Project marked as sign off.
+Bug: Fixed translation issue with some texts.
+Bug: Fixed PHP notice while creating WordPress post or page.
+Bug: Fixed inability  to uncheck Activate Milestones, tasks and Invoicing in support ticket.
+Bug: Fixed various issues with WordPress 5.6.
+Bug: Fixed incorrect Quote URL parameter inside email notification.
+Bug: Fixed fatal error while uploading Project file in PHP 8.
+Feature : Added roadmap page and embed the public roadmap.
+
+= 4.3.11 (12 Jan, 2021) =
+Bug : Fixed Unable to activate Projectopia - Twilio Integration plugin
+Bug : Fixed the issue of incorrect start and end date of project.
+Bug : Fixed inability to edit task in Safari browser.
+Bug : Fixed various time and date issues with reoccurring invoice.
+Bug: Fixed recurring Invoice not sending on creation.
+Bug: Fixed recurring invoice not sent according to time on next issue.
+Bug: Fixed Invoice with manual add payment does not show up in Projectopia Client's dashboard.
+Feature: Added option to add  a file to a task from the project edit page.
+
+= 4.3.10 (28 December, 2020) =
+Bug : Fixed the inability to create bug report while using bug tracker addon.
+Bug:  Fixed the issue of new support  tickets created marked as resolved.
+Bug : Fixed Partial payment for invoice is not working.
+Bug : Fixed Support ticket table sorting issue in client dashboard.
+Bug : Fixed creation of new project for un-linked WooCommerce product.
+Bug : Fixed PHP warnings in Costs and Invoices for a project in Projectopia Client's user interface.
+Bug : Fixed PHP notices in Project Updates on dashboard.
+Enhancement : Made all tables remember the number of items to show.
+
+= 4.3.9 (14 December, 2020) =
+Bug : Fixed Missing number in "Show" dropdown in support ticket.
+Bug : Fixed View invoice link from email notification not working.
+Bug : Fixed Invoice with partial/increment manual payment not being marked as paid.
+Bug : Fixed the inability to  remove text in ticket notes from a support ticket.
+Bug : Fixed Ad Hoc task not showing up under my task or all tasks.
+Bug : Fixed Task without Project not showing up under All Tasks or My Tasks.
+Bug : Fixed incorrect recoding of  Start Time and End Time in task timer.
+Bug : Fixed strange characters appearing in project brief while using Google recaptcha.
+Bug : Fixed Invalid deadline check message.
+Bug : Fixed missing email address for team member contact details.
+Bug : Fixed Projectopia Client dashboard mobile menu bugs.
+Bug : Fixed capturing of  Recaptcha response in submitted lead form content.
+Bug : Fixed issue with deleting a project message.
+
+= 4.3.8 (31 August, 2020) =
+Bug : Fixed invoice payments while using PayPal sandbox.
+Bug : Fixed issue where enter key deletes support ticket.
+Bug : Fixed invoice item subtotal.
+Bug : Fixed issue while emailing invoices to client.
+Bug : Fixed php notices in custom support ticket status.
+Bug : Fixed sending recurring invoice on creation.
+Bug : Fixed client dashboard logo hidden issue when scrolling down and back up.
+Enhancement : Added more details to time entries in a task.
+Enhancement : Added ability to delete all logs in Project Updates metabox.
+
+= 4.3.7 (15 August, 2020) =
+
+Bug : Fixed compatibility issues with WordPress 5.5
+Bug : Fixed FAQ section on client's dashboard.
+Bug : Fixed duplicate footer issue in invoice.
+Bug : Fixed issues while viewing resolved tickets in client's dashboard
+Bug : Fixed issues with Paypal payment for subscriptions in client dashboard.
+Bug : Added the Indonesian, Indian, and New Taiwan currency to the Supplier Currency list
+Bug : Fixed php notices and warnings.
+Feature : Added shortcode in FAQ answer.
+Enhancement : Replace mail settings label with documentation link.
+
+
+= 4.3.6 (03 August, 2020) =
+* Enhancement: Added preview button when someone editing project/task.
+* Enhancement: Added missing edit task icon and popup for tasks in a Project.
+* Enhancement: Added option to list projects by last update time.
+* Bug: Fixed Manual Date time entry and Reporting Addon issue.
+* Bug: Fixed option for Currency to be Set Per Supplier.
+* Bug: Fixed Resolved tickets showing up among other status.
+* Bug: Fixed timezone issues by using WordPress Timezone option.
+* Bug: Fixed missing Tasks/Sub Tasks when re-assigned to a different milestone.
+* Bug: Fixed issue where deleting support ticket created via email piping does not delete it's attachment.
+* Bug: Fixed issue where system accepts invalid deadline.
+* Bug: Fixed issue where user is unable to apply milestone template to a support ticket.
+* Bug: Fixed Support tickets table sorting issues.
+* Bug: Fixed issue where Days Until Launch in Client's Projects table is wrong.
+
+= 4.3.5 (12 May, 2020) =
+* Feature: Added date option for manual time entries in the task.
+* Feature: Added Google reCaptcha in client login and registration form.
+* Feature: Added Indonesian Currency option.
+* Enhancement: Avatar upload option in Current active WP theme client profile.
+* Enhancement: Improve an Income/Expenditure by Month widget filter options.
+* Enhancement: Redirect to quote list on clicking "Cancel Quote/Estimate".
+* Enhancement: Improved envato register form design for Projectopia client dashboard theme.
+* Bug: Fixed bell icon notification in project message for client.
+* Bug: Fixed creation of duplicate client for new client registration.
+* Bug: Fixed infinite loading issue on Resend Quote/Estimate.
+* Bug: Fixed issues when creating a new project.
+* Bug: Fixed team members/clients online status issue.
+* Bug: Fixed notice/fatal errors on an edit of quote tasks.
+
+= 4.3.4 (27 April, 2020) =
+* Feature: Add Google reCaptcha in Lead and Quote forms.
+* Feature: Add persistent cache option for project filter selection.
+* Enhancement: Add quote email attachment as PDF version.
+* Enhancement: Create support tickets from unknown email.
+* Enhancement: Bulk delete for support tickets.
+* Enhancement: Rename Test date option to an appropriate name.
+* Bug: Remove autofill for billing email in client details page.
+* Bug: Fix empty subject email support ticket of client.
+* Bug: Fix creating of client from client page.
+* Bug: Fix email notification of quote form.
+* Bug: Fix quote new message email notification for client.
+
+= 4.3.3 (30 March, 2020) =
+* Feature: Ability to customize support ticket priorities
+* Enhancement: Quote form edit page enhancements
+* Enhancement: Saving settings page active tab
+* Enhancement: Added Indian and New Taiwan Currency Options
+* Bug: Supplier Addon - Fix table formatting proper
+* Bug: Remove preview buttons from all CPT in backend.
+* Bug: Project edit popup cancel button redirecting on dashboad
+* Bug: Front-end quote form is not getting clean after submission
+
+= 4.3.2 (12 March, 2020) =
+* Feature: Introduce Setup Wizard
+* Feature: New quote email notification.
+* Enhancement: Add quote messaging in wp theme for client
+* Enhancement: Automatically delete upload files when support ticket has been deleted
+* Enhancement: Add Multiple Team members to project at once
+* Bug: Editing recurring invoice
+* Bug: ID shows up in task instead of assigned Client name when using current wp theme for PTO client dashboard
+* Bug: Bug as duplicate team member assigned on same project
+* Bug: Email sending issue
+* Bug: Fix notice/warnings in mpdf library
+* Bug: Projectopia admin does not get notification on support ticket replies from customer.
+
+= 4.3.1 (2 March, 2020) =
+
+* Bug: Extra slashes in javascript file URL
+* Bug: Projectopia select box style
+* Bug: Mobile Menu Icon
+* Bug: Unable to delete milestone with missing ID
+* Bug: Conflict with Third Party Plugin
+* Bug: Uncaught Error: Call to undefined function imap_open()
+* Feature: Add Custom CSS Tab in Settings
+* Bug: Fix notice error in admin
+* Bug: Adding a new user doesn't show up on Clients list
+* Bug: Getting errors in client dashboard
+* Feature: Messaging system for quote
+* Feature: Task timer notes
+* Bug: Error in time calculation for task
+* Bug: Adding a new user doesn't show up on team member list
+* Enhancement :Bulk operation for converting users to clients and team member
+* Enhancement :Invoice is not in RTL layout when a RTL language is used in WordPress

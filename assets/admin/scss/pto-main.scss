@@ -1,0 +1,824 @@
+/**
+* This is style file overwrite the projectopia cpt list style and some other styles .
+*/
+
+ //Status and colors
+#wpbody {
+    .status {
+        font-size: .75rem !important;
+        border-radius: .75rem;
+        display: inline-block;
+        margin-bottom: 0 !important;
+        padding: 0 .9375rem;
+        min-height: 1.25rem;
+        line-height: 1.25rem !important;
+        white-space: nowrap !important;
+    }
+    
+    .notSent,
+    .overdue {
+        color: #f22020 !important;
+        background: #ffe6e6;
+    }
+    
+    .clientApproval {
+        color: #ff8900 !important;
+        background-color: #ffe4b0;
+    }
+    
+    .approved {
+        color: #24c564 !important;
+        background-color: #cafad1;
+    }
+    
+    .normal {
+        color: #23acb4 !important;
+        background-color: #d3f4ef;
+    }
+    
+    .off {
+        color: #2c3782 !important;
+        background-color: #d6d9f1;
+    }
+
+    .closed {
+        color: #95A5A6 !important;
+        background-color: #e0ecec;
+    }
+}
+
+
+.wp-pto-v5x {
+
+    font-family: 'Cabin', sans-serif;
+
+    //Post styles
+    #wpcontent {
+        a {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    #screen-options-wrap,
+    #contextual-help-wrap{
+        padding: 15px 30px;
+    }
+
+    #screen-meta,
+    #screen-meta-links {
+        margin: 0 15px;
+    }
+
+    #screen-meta,
+    #screen-meta-links .show-settings {
+        border: 1px solid #dee2e6;
+    }
+    &.edit-php .wrap{
+        padding:30px;
+    }
+
+    &.edit-php .wrap,
+    &.post-php .wrap,
+    &.post-new-php .wrap {
+        margin: 40px 15px;        
+    }
+
+    &.edit-php .page-title-action {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+
+    &.edit-php .page-title-action,
+    &.post-php .page-title-action {
+        font-weight: 500;
+        font-size: var(--initFontSize);
+        color: #ffffff;
+        background-color: var(--mainColor);
+        border: 1px solid var(--mainColor) !important;
+        padding: 0 20px;
+        line-height: 36px;
+        display: inline-block;
+        border-radius: 4px;
+        text-decoration: none;
+        text-transform: capitalize;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+        opacity: 1;
+        &:hover {
+            outline: none;
+            text-decoration: none;
+            background-color: transparent;
+            color: var(--mainColor) !important;
+        }
+    }
+
+    &.edit-php .wp-heading-inline {
+        border-bottom: 1px solid #dee2e6;
+        width: 100%;
+        position: relative;
+        min-height: 30px;
+        color: #000000;
+        padding-bottom: 1.5rem;
+        display: inline-block;
+        font-size: 1.25rem;
+        line-height: 1.2;
+        font-weight: 400;
+        margin-bottom: 1.5rem;
+    }
+
+    #posts-filter {
+
+        #post-search-input {
+            line-height: 32px;
+            border: solid 1px #dee2e6;
+        }
+
+        .button {
+            font-weight: 500;
+            font-size: var(--initFontSize);
+            color: #ffffff;
+            background-color: var(--mainColor);
+            border: 1px solid var(--mainColor);
+            padding: 0 20px;
+            line-height: 32px;
+            display: inline-block;
+            border-radius: 4px;
+            text-decoration: none;
+            text-transform: capitalize;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+            opacity: 1;
+
+            &:hover {
+                outline: none;
+                text-decoration: none;
+                background-color: transparent;
+                color: var(--mainColor);
+            }
+
+            .current-page,
+            &.next-page,
+            &.first-page,
+            &.prev-page,
+            &.last-page {
+                background-color:#fff;
+                color:#000;
+                border-color: #dee2e6;
+            }
+        }
+
+        .search-box {
+            margin-bottom: 15px;
+        }
+
+        .wp-list-table {
+            margin: 1.875rem 0;
+            border: 0;
+            box-shadow: unset;
+        }
+
+        /*.wp-list-table td,
+        .wp-list-table th {
+            vertical-align: middle;
+        }*/
+
+        .tablenav {
+            height: 40px;
+            margin: 30px 0;
+
+            .actions select {
+                text-transform: capitalize;
+                line-height: 2rem;
+                height: 35px;
+                background: transparent url(../img/selection-bar.svg);
+                background-repeat: no-repeat;
+                background-position: calc(100% - 10px) center;
+                background-size: 20px;
+                border-color: #e7eff0 !important;
+                font-weight: 500;
+                font-family: 'Cabin', sans-serif;
+                font-size: 16px;
+                padding: 0 1rem;
+                min-width:170px;
+            }
+    
+        }
+
+        .striped > tbody > :nth-child(odd),
+        ul.striped > :nth-child(odd),
+        .alternate {
+            background-color:#fff;
+        }
+
+    }
+
+    .subsubsub {
+        font-size: 14px;
+    }
+
+    table.wp-list-table {
+        border-right-width: 1px !important;
+        border: none;
+
+        td,
+        th {
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        thead {
+            th {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                color: #99a6b9 !important;
+                border-left: none;
+                border-right: none;
+                background-color: #fff !important;
+            }
+
+            th::before,
+            th::after {
+                display: none !important;
+            }
+        }
+
+        td {
+            font-size: 14px;
+            line-height: 24px;
+            color: #99a6b9;
+        }
+
+        tbody {
+            tr {
+                td {
+                    margin-bottom: 0;
+                   /* vertical-align: middle;*/
+
+                    a,
+                    time {
+                        font-size: 13px;
+                        line-height: 22px;
+                        color: #99a6b9 !important;
+                        font-weight: 400;
+                    }
+
+                    p,
+                    a.row-title {
+                        margin-bottom: 0;
+                        font-weight: normal;
+                        font-size: 1rem !important;
+                        line-height: 22px;
+                        color: #56606d !important;
+                        font-weight: 500;
+                    }
+                    
+                    span {
+                        font-weight: 400;
+                        color: #99a6b9;
+                    }
+                }
+            }
+        }
+
+        tfoot{
+            display: none;
+        }
+
+        .percircle {
+            margin: 0;
+            background-color: #e0e4ea;
+
+            > span {
+                color: #56606d;
+                font-size: 12px;
+                height: initial;
+            }
+
+            &::after {
+                background-color: #ffffff;
+            }
+
+            .bar {
+                border-color: var(--mainColor) !important;
+            }
+        }
+
+        .overDateline {
+            color: #eb5757;
+        }
+
+        .completedProject {
+            p {
+                font-size: 12px !important;
+                line-height: 15px;
+                color: #99a6b9;
+                font-weight: 400;
+            }
+
+            span {
+                font-size: 12px;
+                line-height: 15px;
+                color: #56606d;
+                font-weight: 700;
+            }
+        }
+    }
+
+    input[type=checkbox] {
+        height: 18px;
+        width: 18px;
+        border: 2px solid #c4cefe;
+        border-radius: 4px;
+        position: relative;
+
+        &:focus {
+            border-color:unset;
+            box-shadow: unset;
+            outline: unset;
+        }
+
+        &:checked {
+            background-color: #6576ff;
+            border: 2px solid #6576ff;
+
+            &::before {
+                left: 5px;
+                top: 2px;
+                width: 0.25rem;
+                height: 0.5rem;
+                border: solid #fff;
+                border-width: 0 .125rem .125rem 0;
+                transform: rotate(40deg );
+                position: absolute;
+                content: '';
+                margin: 0;
+            }
+        }
+    }
+}
+
+.wp-list-table .check-column {
+    width: 3em;
+}
+
+@media screen and (max-width: 782px){
+    .column-project_progress_per,
+    .column-project_progress {
+        display:block;
+    }
+
+    .search-box{
+        display:none;
+    }
+
+}
+
+@media screen and (max-width: 1170px) {
+    .column-project_progress_per {
+        display:none;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .column-project_progress {
+        display:none;
+    }
+}
+
+
+//Post edit page like project edit
+
+/* Css for projectUpdates - #tab */
+.UpdatesWrapper {
+    .card {
+        background-color: #f5f6fa;
+
+        .dailyUpdate {
+            padding-top: 0 !important;
+
+            .dailyUpdateInner {
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+.wp-pto-v5x {
+
+    #titlediv #title,
+    #post_name {
+        font-size: 16px;
+        color: #56606d;
+        border: 1px solid #dee2e6;
+        min-height: 52px;
+        line-height: 52px;
+        border-radius: 6px;
+        padding: 0px 15px;
+    }
+
+    //Meta box stylings
+    .postbox {
+        border: 1px solid #dee2e6;
+    
+        .projectActivities::-webkit-scrollbar {
+            width: 5px;
+        }
+    
+        .projectActivities::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+    
+        .projectActivities::-webkit-scrollbar-thumb {
+            background-color: var(--mainColor);
+            outline: unset;
+        }
+    
+        .postbox-header {
+            border-color:#dee2e6;
+        }
+
+        .p {
+            font-size: 16px;
+        }
+        
+        .cqpim_tooltip {
+            color: #6576ff;
+            opacity: 0.8;
+        }
+
+        .dropdown-menu {
+            .dropdown-item {
+                margin : 0;
+            }
+        }
+
+        h5 {
+            font-size: 16px;
+        }
+
+        h6 {
+            font-size: 14px;
+        }
+    }
+}
+
+#project_colors {
+    .wp-picker-container .wp-color-result.button {
+        border:unset;
+        width: 40px;
+        height: 40px;
+        border-radius: 0;
+    }
+
+    .wp-picker-active {
+        .wp-color-result-text {
+            display: non;
+        }    
+    }
+
+    .wp-color-picker {
+        height: 40px;
+        border-color: #dee2e6;
+        padding: 0 8px;
+        border-radius: 0;
+        min-width: 100px;
+        font-size: 16px;
+    }
+
+    .wp-color-result-text {
+        background: unset;
+        border: unset;
+        margin-left: 15px;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: 'Cabin', sans-serif;
+    }
+
+    .button.wp-picker-clear{
+        height: 40px;
+        padding: 0 15px;
+        border-color: #6576ff;
+        background: #6576ff;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 5px;
+        font-weight: 500;
+    }
+
+    .selected-color {
+        .single-color {
+            h5 {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.member-grid {
+
+    border: 2px solid #e7eff0;
+    border-radius: 6px;
+    padding: 30px 10px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-bottom: 30px;
+    position: relative;
+    min-width: 200px;
+
+    #wpcontent & a {
+        color: #222222;
+    } 
+
+    .cqpim_gravatar {
+        img {
+            width:50px;
+            border-radius: 50%;
+        }
+    }
+    .member-name{
+        text-transform: capitalize;
+    }
+
+    .dropdown-edit {
+        position: absolute;
+        top: 10px;
+        right: 0px;
+    }
+}
+
+//Alter box styling
+#cboxContent {
+
+    height:auto !important;
+
+    .model_title {
+        color: #212529!important;
+    }
+
+    #cboxLoadedContent {
+        overflow: hidden !important;
+        height: auto !important;
+        p {
+            font-size: 1rem;
+            display: block;
+            width: 100%;
+            font-size: var(--initFontSize);
+            line-height: calc(var(--initFontSize) + 10px);
+            color: var(--grayDeepColor);
+            font-weight: 500;
+        }
+    }    
+
+}
+
+
+//Milestone, Tasks and Sub task styles. 
+.milestone-content {
+
+    .dd-milestone-info {
+        margin: 10px 0;
+        position: relative;
+        font-size: 14px;
+        background: var(--grayDeepColor);
+        padding: 20px;
+        border-radius: 6px;
+        color: #fff;    
+    }
+
+    .dd-milestone-title
+    .ms-title,
+    .dd-task .ms-title {
+        font-weight: 500;
+        font-size: 1.125rem;
+        color: #2d405a;
+        margin: 0;
+        outline: none;
+        background-color: transparent;
+        border: none;
+        text-align: left;
+    }
+
+    .dd-task-info {
+
+        @media (max-width: 576px) {
+            margin: 0px;
+        }
+
+        &-headerRight {
+            @media (min-width: 768px) {
+                width: 50%;
+                margin-right: 50px;
+            }
+            @media (max-width: 768px) {
+                justify-content: flex-start !important;
+
+                .dragDrop {
+                    display: none;
+                }
+            }
+
+            @media (max-width: 768px) and (min-width: 576px) {
+                margin-left: 20px;
+            }
+        }
+
+        .mlAcrHeader {
+            padding: 15px 0 10px 0;
+            .accordionTitle[aria-expanded="true"] {
+                background-color: #fff;
+            }
+        }
+        .card {
+            background-color: #fff;
+        }
+
+        .mileStone-addSchedule {
+            padding-top: 15px;
+            @media (max-width: 768px) {
+                padding: 10px;
+            }
+            @media (max-width: 576px) {
+                padding: 0px;
+            }
+        }
+
+        .addSchedule {
+
+            margin-right: 30px;
+            margin-bottom: 8px;
+            @media (max-width: 768px) {
+                margin: 0;
+            }
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+
+            label {
+                display: block;
+                font-size: var(--initFontSize);
+                line-height: calc(var(--initFontSize) + 10px);
+                color: var(--graySallowColor);
+            }
+
+            .input {
+                padding: 0 15px;
+                color: #2d405a;
+                font-size: var(--initFontSize);
+                line-height: calc(var(--initFontSize) + 20px);
+                min-height: calc(var(--initFontSize) + 20px);
+                background-color: #fff;
+                border: 1px solid #e7eff0;
+                max-width: 150px;
+            }
+        }
+    }
+}
+
+.mileStone-content {
+    &-taskBar {
+        margin: 20px;
+        background-color: var(--grayDeepColor);
+        padding: 20px;
+        border-radius: 6px;
+
+        @media (max-width: 576px) {
+            margin: 0;
+            margin-bottom: 15px;
+        }
+    }
+    &-singleDeadline {
+        margin-right: 30px;
+    }
+    &-icon {
+        margin-right: 10px;
+    }
+    &-info {
+        h5 {
+            font-weight: 400;
+            font-size: calc(var(--initFontSize) + 2px);
+            line-height: calc(var(--initFontSize) + 12px);
+            color: #c4cefe;
+        }
+        p {
+            font-weight: 500;
+            font-size: var(--initFontSize);
+            line-height: calc(var(--initFontSize) + 10px);
+            color: #ffffff;
+        }
+    }
+    .add-mileStone {
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+
+}
+
+.form-group {
+    label {
+        display: block;
+        width: 100%;
+        font-size: var(--initFontSize);
+        line-height: calc(var(--initFontSize) + 10px);
+        color: var(--grayDeepColor);
+        font-weight: 500;
+    }
+
+    .helpId {
+        font-size: 12px;
+    }
+
+    .input.form-control {
+
+        font-size: 15px;
+        transition: all 0.3s;
+        border: 1px solid #ced4da;
+        height: 52px;
+        color: #56606d;
+
+        &:focus {
+            z-index: 0;
+            border: 2px solid var(--mainColor) !important;
+        }
+    }
+}
+
+.input-group {
+    label {
+        display: block;
+        width: 100%;
+        font-size: var(--initFontSize);
+        line-height: calc(var(--initFontSize) + 10px);
+        color: var(--grayDeepColor);
+        font-weight: 500;
+    }
+
+    .input {
+        background-color: var(--darkWhiteColor);
+        border-radius: 6px;
+        padding: 0 20px;
+        color: var(--graySallowColor);
+
+        &::placeholder {
+            color: var(--graySallowColor);
+        }
+    }
+
+    .customSelect {
+        width: 100%;
+        max-width: 100%;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-image: url("../img/downangle.svg");
+        background-repeat: no-repeat;
+        background-position: 96% center;
+    }
+
+    .uploadFileBtn {
+        height: 52px;
+
+        .custom-file-label {
+            height: 52px;
+            margin: 0 !important;
+            padding: 0 20px !important;
+            line-height: 52px;
+            background-color: var(--darkWhiteColor);
+            border-color: #fff;
+
+            &:after {
+                line-height: 52px;
+                color: #495057;
+                content: "No file chosen";
+                background-color: #fff;
+                border: none;
+                border-radius: 0;
+                height: 52px;
+                width: 170px;
+                text-align: center;
+                padding: 0;
+            }
+        }
+    }
+}
+
+
+//Post edit page screen size
+
+#poststuff {
+    #post-body {
+        &.columns-2 {
+            margin-right: 340px;
+        }
+        
+        &.columns-2 #side-sortables{
+            min-width: 320px;
+        }
+    }
+}
